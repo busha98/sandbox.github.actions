@@ -44,9 +44,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo test, and deploy your project.
-          echo "${{ inputs.choice }}"
-          echo "${{ inputs.choice.description }}"
-          echo "${{ inputs.choice.required }}"
-          echo "${{ inputs.choice.type }}"
-          echo "${{ inputs.choice.options }}"
+          echo "${{ github.event.inputs.choice }}"
+          echo "${{ github.event.inputs.choice.description }}"
+          echo "${{ github.event.inputs.choice.required }}"
+          echo "${{ github.event.inputs.choice.type }}"
+          echo "${{ github.event.inputs.choice.options }}"
 
