@@ -97,7 +97,9 @@ jobs:
           echo $matrix | json2yaml
 
   backend:
+    name: matrix-test
     needs: matrix
+    runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
