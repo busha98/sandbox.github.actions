@@ -64,5 +64,5 @@ jobs:
 
 
       - name: Test conditions
-        if: ${{ github.event.inputs.field }} == "opt6"
+        if: ${{ github.event.inputs.field == 'opt6' }}
         run: echo "It's working ${{ github.event.inputs.field }}"
