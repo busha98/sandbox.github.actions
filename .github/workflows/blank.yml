@@ -44,9 +44,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo test, and deploy your project.
-          echo "${{ github.event.inputs.field }}"
-          echo "${{ github.event.inputs.field.description }}"
-          echo "${{ github.event.inputs.field.required }}"
-          echo "${{ github.event.inputs.field.type }}"
-          echo "${{ github.event.inputs.field.options }}"
+          echo "$GITHUB_CONTEXT"
 
