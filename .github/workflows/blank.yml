@@ -62,3 +62,8 @@ jobs:
       - name: Dump inputs context
         run: echo '${{ toJSON(inputs) }}'
 
+
+      - name: Test conditions
+        if: ${{ github.events.inputs.field }} == 'opt6'
+        run: echo "It's working"
+      
