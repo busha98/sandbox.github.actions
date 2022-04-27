@@ -2,9 +2,13 @@ name: Workflow run test
 
 on:
   Workflow_run:
-    workflows: [Master Check failure, Master Check success]
-    types: [completed]
-    branches: [master]
+    workflows: 
+      - Master Check failure
+      - Master Check success
+    types:
+      - completed
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
