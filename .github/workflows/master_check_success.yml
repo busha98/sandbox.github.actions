@@ -1,0 +1,15 @@
+name: Master Check success
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: info
+        run: echo "Job Started"
+
+

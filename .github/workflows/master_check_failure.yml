@@ -1,0 +1,19 @@
+name: Master Check failure
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: info
+        run: echo "Job Started"
+
+      - name: error
+        run: |
+          exit 1
+
+
